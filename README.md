@@ -12,4 +12,4 @@ Have some code that you would like to contribute back? Awesome, I love [pull req
 
 Forked from DVS
 	
-	http://www.intert3chmedia.net/2011/12/minify-html-javascript-css-without.html
+* http://www.intert3chmedia.net/2011/12/minify-html-javascript-css-without.html
