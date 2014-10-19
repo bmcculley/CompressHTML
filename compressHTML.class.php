@@ -17,11 +17,13 @@ class CompressHTML {
     protected $ignoreComments;
     protected $compressJS;
     protected $compressCSS;
+    protected $addBotComment;
 
-    public function __construct($html, $igComments = false, $comJS = false, $comCSS = false) {
+    public function __construct($html, $igComments = false, $comJS = false, $comCSS = false, $bComment = false) {
         $this->ignoreComments = $igComments;
         $this->compressJS = $comJS;
         $this->compressCSS = $comCSS;
+        $this->addBotComment = $bComment;
         if (!empty($html)) {
             $this->parseHTML($html);
         }
@@ -100,7 +102,9 @@ class CompressHTML {
 
     public function parseHTML($html) {
         $this->html = $this->minifyHTML($html);
-        $this->html .= "\n" . $this->bottomComment($html, $this->html);
+        if ($this->addBotComment) {
+            $this->html .= "\n" . $this->bottomComment($html, $this->html);
+        }
     }
 
     protected function removeWhiteSpace($str) {
