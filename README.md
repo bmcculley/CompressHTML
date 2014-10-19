@@ -7,7 +7,7 @@ to check [example.php](https://github.com/bmcculley/CompressHTML/blob/master/exa
 
 Found a bug or have an issue [report it here](https://github.com/bmcculley/CompressHTML/issues).
 
-Have some code that you would like to contribute back? Awesome, I love [pull requests](https://github.com/bmcculley/CompressHTML/pulls) :)
+Have some code that you would like to contribute back? Awesome, I love [pull requests](https://github.com/bmcculley/CompressHTML/pulls) :smile:
 
 
 Forked from DVS
